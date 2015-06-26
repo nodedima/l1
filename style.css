@@ -1,0 +1,90 @@
+body {
+	font-family: Futura;
+	color: #212121;
+}
+
+#page-header {
+	text-align: center;
+}
+
+
+nav li {
+  display: inline;
+  border-style: dotted;
+  border-color: #673AB7;
+  margin: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+nav a {
+  color: #673AB7;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a{
+  color: #673AB7;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+#nextButton, #prevButton {
+	border: 2px solid;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: white;
+	border-color: #673AB7;
+	color: #673AB7;
+}
+
+#nextButton:hover, #prevButton:hover {
+	border: 2px solid;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+section {
+	margin: 20px;
+	border-style: dashed;
+}
+
+h1, h2, h3 {
+	margin: 10px;
+	color: #673AB7;
+}
+
+p {
+	margin: 10px;
+}
+
+article {
+	margin: 20px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+main {
+	margin: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+}
+
+footer {
+	margin: 10px;
+}
+
+#page-footer {
+	text-align: center;
+	margin-top: 100px;
+	font-weight: bold;
+	font-size: 18pt;
+}
+

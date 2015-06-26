@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Semantic tags and history api example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="page-header">
+        <h1>Лабораторная работа номер 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Страница 1</a></li>
+                <li><a href="#">Страница 2</a></li>
+                <li><a href="#">Страница 3</a></li>
+            </ul>
+        </nav>
+    </header> <!-- page header  -->
+
+    <section>
+        <header>
+            <h2>Это первая секция на этой странице в элементе body, а конкретно это строчка -- header, т.к. семантически это заголовок</h2>
+        </header> 
+
+        <main>
+            <article>
+                <h3>Здесь идёт статья, более того она на странице -- главная</h3>
+                <p>Мы вроде бы разметили страницу семантически с использованием тегов для структуризации нашего содержимого, но также в html5 старые теги приобретают новый смысл</p>
+                <p>Так, например, мы можем пометить что-то <b>важное</b>, разместить какую-то <mark>метку</mark> на нашей странице, чтобы быстрее сориентировать посетителя</p>
+            </article>
+            <article>
+                <h3>Ещё один артикл, тут разместим пример с history API</h3>
+                <p>Пример простой, как и практически во всех примерах в интернете</p>
+                <figure>
+                    <p>Смотрим как картинка меняется, а страница не перезагружается:</p>
+                    <figcaption id="descriptionImg">smthg</figcaption>
+                    <img id="changingImg" src="">
+                    <div>
+                        <input id="prevButton" onclick="moved(-1)" type="button" value="&lt;">
+                        <input id="nextButton" onclick="moved(1)" type="button" value="&gt;">
+                    </div>
+                </figure>
+            </article>
+        </main>
+
+        <aside>
+            <article>
+                <h3>Не очень важный article</h3>
+            </article>
+        </aside>
+
+        <footer>Какой-то логический конец aricle, где можно что-то указать, например ссылку на автора и его <address>контакты</address></footer>
+    </section> <!-- main section  -->
+
+    <aside>
+        <h3>Реклама</h3>
+        <p>Или какой другой контент не являющийся главным на странице</p>
+    </aside>  <!-- aside section  -->
+
+    <footer id="page-footer">
+        <p>Эта страница создана <time>17 июня 2015 года</time></p>
+    </footer> <!-- page footer  -->
+
+</body>
+</html>
